@@ -9,5 +9,7 @@ ranNums = [] #name your list and make sure it is empty!
 for index in range(10): #for loop appends 10 numbers to your list, but make sure you name your variable
     ranNums.append(randint(0,50)) #this adds a random number between 1-50 to the list
 
-
-print(ranNums) #print the list!
+if _________ in __________:
+    print("Number",___________,"found in the list!")
+else:
+    print("Number",_____________,"not found in the list.")
