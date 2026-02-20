@@ -10,15 +10,15 @@ for index in range(10): #for loop appends 10 numbers to your list, but make sure
     ranNums.append(randint(0,50)) #this adds a random number between 1-50 to the list
 
 
-random_number = randint(1, 50) #number to find
+random_number = randint(1, 20) #number to find
 
 comparisons = 0  # Initialize the counter for comparisons
 found = False  # if found
 
 
-for random_number in ranNums:  # Name your variable in the for loop
+for num in ranNums:  # Name your variable in the for loop
     comparisons += 1  # Increment the counter for each comparison
-    if ranNums == random_number:
+    if num == random_number:
         found = True  # Set found to True if the number is in the list
         break  # Exit the loop early if the number is found
 

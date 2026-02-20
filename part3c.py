@@ -11,13 +11,15 @@ for index in range(10): #for loop appends 10 numbers to your list, but make sure
 
 
 print(ranNums) #print the list!
-
-smallest_number = min(ranNums)
-biggest_number = max(ranNums)
-sum_of_numbers = sum(ranNums)
+#sort numbers and reverse order
 ranNums.sort()
-
-print("the smallest number is",smallest_number)
-print("the biggest number is",biggest_number)
-print("the sum of the list is",sum_of_numbers)
-print("the sorted list is",ranNums)
+ranNums.reverse()
+print("the reversed order is",ranNums)
+#user takes out a value
+input_number = int(input("type a number from the list to remove: "))
+ranNums.remove(input_number)
+print("the new list is",ranNums)
+#multiply all numbers in list together 
+import math
+product = math.prod(ranNums)
+print("the product is",product)
